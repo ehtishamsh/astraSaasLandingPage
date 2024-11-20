@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        textColor: "rgb(243, 236, 254)",
         mainColor: {
           100: "#f1e9f8",
           200: "#ddcdef",
