@@ -3,8 +3,8 @@ import { IoChevronForwardOutline } from "react-icons/io5";
 
 function Navbar() {
   return (
-    <header className=" bg-mainColor-800">
-      <nav className="max-w-7xl mx-auto px-4 py-6 flex items-center">
+    <header className=" fixed top-0 left-0 right-0 bg-mainColor-900/30 backdrop-blur-md  z-[999]">
+      <nav className="max-w-7xl mx-auto px-4 py-4 flex items-center">
         <Link reloadDocument to="/" className="mr-14">
           <img src="/logo.svg" alt="Logo" />
         </Link>
