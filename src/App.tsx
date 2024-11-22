@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="bg-mainColor-900">
+      <div className="bg-mainColor-950">
         <Outlet />
       </div>
     </>
