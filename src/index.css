@@ -10,6 +10,7 @@
   width: 100%;
   z-index: 10;
   height: 100%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0) 20%, #0f0b19 100%);
+  filter: blur(60px);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 20%, #0a0711 100%);
   pointer-events: none;
 }
