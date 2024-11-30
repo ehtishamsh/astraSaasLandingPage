@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        borderMainColor: "rgba(255, 255, 255, 0.1)",
         textColor: "rgb(243, 236, 254)",
         mainColor: {
           100: "#f1e9f8",
@@ -13,7 +14,7 @@ export default {
           500: "#7151ac",
           600: "#50388a",
           700: "#34235c",
-          800: "#160f22",
+          800: "rgb(22, 15, 34)",
           900: "#0f0b19",
           950: "#0a0711",
         },
