@@ -18,9 +18,11 @@ function Feature() {
         <img
           src="/featuregrid.png"
           alt=""
-          className="grayscale absolute z-20 top-0 max-h-[500px]"
+          className="grayscale absolute z-20  top-0 max-h-[500px]"
         />
-        <img src="/feature.png" alt="" className="rounded-xl z-40" />
+        <div className="border-[12px] rounded-xl border-borderMainColor z-40">
+          <img src="/feature.png" alt="" className=" w-full" />
+        </div>
       </div>
       <div className="mt-10 grid grid-cols-3 gap-6">
         <div className="p-5 rounded-2xl text-left bg-mainColor-800">
