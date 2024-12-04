@@ -1,7 +1,7 @@
 function Graphs() {
   return (
-    <section className="py-8 px-4 mt-10">
-      <div className="max-w-7xl mx-auto bg-mainColor-800 rounded-xl p-9 grid gap-16 grid-cols-7">
+    <section className="py-8 px-4 mt-4">
+      <div className="max-w-7xl mx-auto bg-mainColor-800/60 border border-borderMainColor rounded-xl p-8 grid  gap-16 grid-cols-7">
         <div className="col-span-4 py-8">
           <span className="text-mainColor-100 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
             GRAPHS

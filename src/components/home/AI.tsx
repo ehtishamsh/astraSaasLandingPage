@@ -1,7 +1,7 @@
 function AI() {
   return (
     <section className="py-8 px-4">
-      <div className="max-w-7xl mx-auto bg-mainColor-800 rounded-xl p-9 grid gap-16 grid-cols-7">
+      <div className="max-w-7xl mx-auto  border border-borderMainColor bg-mainColor-800 rounded-xl p-8 grid gap-16 grid-cols-7">
         <div className="col-span-3">
           <img
             src="/astro_ai.png"
