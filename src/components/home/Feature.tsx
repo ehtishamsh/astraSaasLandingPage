@@ -1,6 +1,6 @@
 function Feature() {
   return (
-    <div className="mt-28 max-w-7xl mx-auto text-center pb-14 px-4">
+    <div className="mt-20 max-w-7xl mx-auto text-center pb-14 px-4">
       <span className="text-mainColor-100 bg-mainColor-800 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
         FEATURE
       </span>

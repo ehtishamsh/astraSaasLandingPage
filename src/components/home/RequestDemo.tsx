@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function RequestDemo() {
   return (
-    <div className="mt-28 max-w-7xl mx-auto flex justify-center items-center text-center  min-h-[470px] relative mb-7 px-4">
+    <div className="mt-20 max-w-7xl mx-auto flex justify-center items-center text-center  min-h-[470px] relative mb-7 px-4">
       <div className="absolute top-0 left-0 right-0 z-20 flex justify-center">
         <img src="/demo.png" alt="Request Demo" />
       </div>
