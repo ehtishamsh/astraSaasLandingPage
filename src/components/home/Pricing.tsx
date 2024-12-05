@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Toggle from "./Toggle";
 
 function Pricing() {
+  const [isToggled, setIsToggled] = useState(false);
+  const toggle = () => setIsToggled(!isToggled);
   return (
     <div className="mt-20 text-center py-24 bg-mainColor-800 px-4">
       <div className="max-w-7xl  mx-auto">
@@ -15,8 +19,17 @@ function Pricing() {
             Not sure which plan is best for you? Contact our sales team for a
             personalized consultation.
           </p>
+          <div className="mt-6 flex justify-center items-center gap-6">
+            <span className="text-mainColor-100 text-lg">Monthly</span>
+            <Toggle
+              label="Monthly"
+              isToggled={isToggled}
+              setIsToggled={toggle}
+            />
+            <span className="text-mainColor-100 text-lg">Annually</span>
+          </div>
         </div>
-        <div className="mt-2 grid grid-cols-3 gap-6 pt-24">
+        <div className="mt-2 grid grid-cols-3 gap-6 pt-10">
           <div className="border border-borderMainColor rounded-xl text-left bg-customGray p-6">
             <span className="text-mainColor-100 text-xs font-bold tracking-[1.2px] mb-7 inline-block font-sans">
               STARTER
@@ -27,10 +40,10 @@ function Pricing() {
             </p>
             <div className="flex items-end h-fit">
               <span className="text-mainColor-100 text-5xl font-semibold tracking-[1.2px] inline-block font-sans">
-                $24
+                {isToggled ? "$200" : "$24"}
               </span>
               <span className="text-mainColor-100/80 tracking-wide inline-block font-sans ml-1">
-                /month
+                /{isToggled ? "year" : "month"}
               </span>
             </div>
             <Link
@@ -88,10 +101,10 @@ function Pricing() {
             </p>
             <div className="flex items-end h-fit">
               <span className="text-mainColor-100 text-5xl font-semibold tracking-[1.2px] inline-block font-sans">
-                $99
+                {isToggled ? "$800" : "$99"}
               </span>
               <span className="text-mainColor-100/80 tracking-wide inline-block font-sans ml-1">
-                /month
+                /{isToggled ? "year" : "month"}
               </span>
             </div>
             <Link
@@ -143,10 +156,10 @@ function Pricing() {
             </p>
             <div className="flex items-end h-fit">
               <span className="text-mainColor-100 text-5xl font-semibold tracking-[1.2px] inline-block font-sans">
-                $599
+                {isToggled ? "$5500" : "$599"}
               </span>
               <span className="text-mainColor-100/80 tracking-wide inline-block font-sans ml-1">
-                /month
+                /{isToggled ? "year" : "month"}
               </span>
             </div>
             <Link
