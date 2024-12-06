@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Toggle from "./Toggle";
+import Reveal from "../animation/Reveal";
 
 function Pricing() {
   const [isToggled, setIsToggled] = useState(false);
@@ -8,29 +9,41 @@ function Pricing() {
   return (
     <div className="mt-20 text-center py-24 bg-mainColor-800 px-4">
       <div className="max-w-7xl  mx-auto">
-        <span className="text-mainColor-100 bg-mainColor-800 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
-          PRICING
-        </span>
+        <Reveal>
+          <span className="text-mainColor-100 bg-mainColor-800 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
+            PRICING
+          </span>
+        </Reveal>
+
         <div className="mt-6 max-w-4xl mx-auto">
-          <h2 className="text-[42px] mb-6 text-mainColor-100 tracking-tight leading-normal font-medium">
-            Flexible Plans for Every Business Need
-          </h2>
-          <p className="text-mainColor-200/50 text-lg text-center max-w-4xl px-5 mx-auto">
-            Not sure which plan is best for you? Contact our sales team for a
-            personalized consultation.
-          </p>
-          <div className="mt-6 flex justify-center items-center gap-6">
-            <span className="text-mainColor-100 text-lg">Monthly</span>
-            <Toggle
-              label="Monthly"
-              isToggled={isToggled}
-              setIsToggled={toggle}
-            />
-            <span className="text-mainColor-100 text-lg">Annually</span>
-          </div>
+          <Reveal delay={0.35}>
+            <h2 className="text-[42px] mb-6 text-mainColor-100 tracking-tight leading-normal font-medium">
+              Flexible Plans for Every Business Need
+            </h2>
+          </Reveal>
+          <Reveal delay={0.45}>
+            <p className="text-mainColor-200/50 text-lg text-center max-w-4xl px-5 mx-auto">
+              Not sure which plan is best for you? Contact our sales team for a
+              personalized consultation.
+            </p>
+          </Reveal>
+          <Reveal delay={0.55}>
+            <div className="mt-6 flex justify-center items-center gap-6">
+              <span className="text-mainColor-100 text-lg">Monthly</span>
+              <Toggle
+                label="Monthly"
+                isToggled={isToggled}
+                setIsToggled={toggle}
+              />
+              <span className="text-mainColor-100 text-lg">Annually</span>
+            </div>
+          </Reveal>
         </div>
         <div className="mt-2 grid grid-cols-3 gap-6 pt-10">
-          <div className="border border-borderMainColor rounded-xl text-left bg-customGray p-6">
+          <Reveal
+            delay={0.65}
+            classes="border border-borderMainColor rounded-xl text-left bg-customGray p-6"
+          >
             <span className="text-mainColor-100 text-xs font-bold tracking-[1.2px] mb-7 inline-block font-sans">
               STARTER
             </span>
@@ -85,13 +98,10 @@ function Pricing() {
                 </span>
               </div>
             </div>
-          </div>
-          <div
-            className="border border-borderMainColor rounded-xl text-left  p-6"
-            style={{
-              background:
-                "radial-gradient(116% 106% at 50% 0%, rgba(168, 113, 255, 0.4), rgb(31, 25, 41) 100%)",
-            }}
+          </Reveal>
+          <Reveal
+            delay={0.75}
+            classes="border pricingGlow border-borderMainColor rounded-xl text-left  p-6"
           >
             <span className="text-mainColor-100 text-xs font-bold tracking-[1.2px] mb-7 inline-block font-sans">
               PROFESSIONAL
@@ -146,8 +156,11 @@ function Pricing() {
                 </span>
               </div>
             </div>
-          </div>
-          <div className="border border-borderMainColor rounded-xl text-left bg-customGray p-6">
+          </Reveal>
+          <Reveal
+            delay={0.85}
+            classes="border border-borderMainColor rounded-xl text-left bg-customGray p-6"
+          >
             <span className="text-mainColor-100 text-xs font-bold tracking-[1.2px] mb-7 inline-block font-sans">
               ENTERPRISE
             </span>
@@ -201,7 +214,7 @@ function Pricing() {
                 </span>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </div>
