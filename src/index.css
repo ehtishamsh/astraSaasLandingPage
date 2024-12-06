@@ -17,3 +17,10 @@
 .inner-shadow {
   box-shadow: inset 0 2px 5px hsla(0, 0%, 100%, 0.2);
 }
+.pricingGlow {
+  background: radial-gradient(
+    116% 106% at 50% 0%,
+    rgba(168, 113, 255, 0.4),
+    rgb(31, 25, 41) 100%
+  );
+}
