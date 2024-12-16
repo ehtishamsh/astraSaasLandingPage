@@ -14,7 +14,7 @@ export const AnimatedImg = () => {
   return (
     <div
       ref={ref}
-      className="flex justify-center relative z-30 max-w-6xl mx-auto px-5"
+      className="flex justify-center relative z-30 max-w-6xl mx-auto px-5 overflow-hidden"
     >
       <motion.div
         className="w-full h-full"
