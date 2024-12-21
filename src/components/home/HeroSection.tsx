@@ -15,12 +15,12 @@ function HeroSection() {
             }}
           >
             <div className="absolute -top-[60px] left-0 right-0 z-20 flex justify-center">
-              <div className="  bg-mainColor-400/60 opacity-50 rounded-full blur-[15rem] w-[433px] h-[525px] hidden lg:flex">
+              <div className="  bg-mainColor-400/60 opacity-50 rounded-full blur-[15rem] w-[433px] h-[525px]  ">
                 &nbsp;
               </div>
             </div>
             <div className="absolute -top-[100px] left-0 right-0 z-20 flex justify-center">
-              <div className="  bg-mainColor-600/60 opacity-50 rounded-full blur-[15rem] w-[380px] h-[620px] hidden lg:flex">
+              <div className="  bg-mainColor-600/60 opacity-50 rounded-full blur-[15rem] w-[380px] h-[620px]  ">
                 &nbsp;
               </div>
             </div>
@@ -28,14 +28,14 @@ function HeroSection() {
               <div className="flex flex-col mb-40 pt-40 max-w-[900px] mx-auto items-center z-30 relative">
                 <Link
                   to={"/"}
-                  className=" border-b-0 border-x-0 border-t-2 border-mainColor-400/40 text-sm flex items-center gap-2 px-3 rounded-full py-1.5 backdrop-blur-md w-fit text-center text-textColor bg-white/10"
+                  className=" border-b-0 border-x-0 border-t-2 border-mainColor-400/40 text-sm max-sm:text-xs flex items-center gap-2 px-3 rounded-full py-1.5 backdrop-blur-md w-fit text-center text-textColor bg-white/10"
                 >
-                  <span className="text-white text-[9px] tracking-wide font-medium bg-mainColor-500 rounded-full px-1.5 py-[0.5px]">
+                  <span className="text-white text-[9px] max-md:text-[7px] tracking-wide font-medium bg-mainColor-500 rounded-full px-1.5 py-[0.5px]">
                     NEW
                   </span>
                   <span>Your Internal Developer Platform</span>
                 </Link>
-                <h1 className="mt-8 text-[54px] font-bold text-center tracking-wide leading-tight">
+                <h1 className="mt-8 text-[54px] max-md:text-4xl max-sm:text-3xl font-bold text-center tracking-wide leading-tight">
                   <span
                     style={{
                       backgroundImage:
@@ -45,7 +45,7 @@ function HeroSection() {
                     }}
                   >
                     Transform Data into Actionable
-                  </span>{" "}
+                  </span>
                   <span
                     style={{
                       backgroundImage:
