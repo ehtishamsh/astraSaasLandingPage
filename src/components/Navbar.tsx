@@ -9,9 +9,11 @@ import { BsPersonGear } from "react-icons/bs";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import Hamburger from "hamburger-react";
 import DropdownMenu from "./home/DropdownMenu";
+import MobileDrawer from "./home/MobileDrawer";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <header className=" fixed top-0 left-0 right-0 bg-mainColor-900/30 backdrop-blur-md  z-[999]">
       <nav className="max-w-7xl mx-auto px-5 max-lg:py-2 py-4 flex max-lg:justify-between items-center">
@@ -105,14 +107,14 @@ function Navbar() {
       </nav>
       {isOpen && (
         <motion.div
-          className="fixed top-0 left-0 right-0 bottom-0 bg-mainColor-900 z-[999] h-screen backdrop-blur-md"
+          className="fixed top-0 left-0 flex flex-col pb-4 items-stretch right-0 bottom-0 bg-mainColor-900 z-[999] h-[100svh] backdrop-blur-md"
           initial={{ x: "100%" }}
           animate={{
             x: 0,
             transition: { duration: 0.5, ease: "backInOut", type: "tween" },
           }}
         >
-          <div className="flex flex-col gap-4 text-mainColor-100 items-center justify-start pt-20 px-6 h-full">
+          <div className="flex flex-col gap-[13px] text-mainColor-100 items-center justify-start pt-20 max-sm:pt-14 px-6 h-full">
             <Link
               reloadDocument
               to="/#ai"
@@ -163,12 +165,31 @@ function Navbar() {
               </span>
               <span>FAQ</span>
             </Link>
-            <div className="z-[9999] hover:bg-mainColor-700 text-base font-medium rounded-[8px] flex gap-2 px-4 py-2 items-center text-start w-full transition-all duration-200">
-              <span>
-                <IoDiamondOutline size={17} />
-              </span>
-              <span>Pricing</span>
+            <div
+              onClick={() => setOpenDrawer((prev) => !prev)}
+              className="z-[9999] cursor-pointer text-base font-medium rounded-[8px] flex gap-2 py-2 items-center text-start w-full transition-all duration-200"
+            >
+              <MobileDrawer isOpen={openDrawer} />
             </div>
+          </div>
+          <div className="grid grid-cols-2 gap-3 items-center px-4 mb-2">
+            <Link
+              reloadDocument
+              to="/"
+              className="inline-flex relative text-mainColor-100 bg-gradient-to-b from-[#b469ff53] to-transparent border border-mainColor-600  overflow-hidden items-center justify-center whitespace-nowrap text-sm ring-offset-background transition transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-95 active:ring-2 active:ring-offset-2 active:ring-offset-background active:ring-ring active:ring-opacity-50 group select-none text-background btn-secondary font-normal h-9 rounded-md px-4"
+            >
+              Login
+            </Link>
+            <Link
+              reloadDocument
+              to="/"
+              className="inline-flex relative overflow-hidden items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-95 active:ring-2 active:ring-offset-2 active:ring-offset-background active:ring-ring active:ring-opacity-50 group select-none bg-gradient-to-b from-[#B266FF] to-[#9C39FF] text-foreground hover:opacity-70 h-9 rounded-md px-4"
+            >
+              Get Started
+              <span>
+                <IoChevronForwardOutline size={18} />
+              </span>
+            </Link>
           </div>
         </motion.div>
       )}
