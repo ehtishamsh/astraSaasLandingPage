@@ -5,7 +5,7 @@ function Features() {
   return (
     <div className="relative">
       <div className=" absolute top-[10%] -left-[10%] bg-mainColor-600 w-96 h-96 rounded-full z-10 blur-[14rem]"></div>
-      <div className="mt-28 max-w-7xl mx-auto text-center pb-14 px-4 relative z-20">
+      <div className="mt-28 max-lg:mt-16 max-w-7xl mx-auto text-center pb-14 px-4 relative z-20">
         <Reveal>
           <span className="text-mainColor-100 bg-mainColor-800 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
             FEATURES
@@ -24,7 +24,7 @@ function Features() {
             </p>
           </Reveal>
         </div>
-        <div className="mt-2 grid grid-cols-2 gap-6 pt-24">
+        <div className="mt-2 grid grid-cols-2 gap-6 pt-24 max-lg:pt-16">
           {cardData.map((card, index) => (
             <Reveal
               delay={0.65 + index * 0.1}

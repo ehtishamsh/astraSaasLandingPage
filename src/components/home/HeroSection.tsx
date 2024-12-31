@@ -6,7 +6,7 @@ import { AnimatedImg } from "./AnimatedImg";
 function HeroSection() {
   return (
     <>
-      <section className="mb-20">
+      <section className="mb-20 max-lg:mb-10">
         <div className="relative">
           <div
             className="w-full h-full relative pt-12 px-5"

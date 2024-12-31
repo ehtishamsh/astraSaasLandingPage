@@ -7,7 +7,7 @@ function Pricing() {
   const [isToggled, setIsToggled] = useState(false);
   const toggle = () => setIsToggled(!isToggled);
   return (
-    <div className="mt-20 text-center py-24 bg-mainColor-800 px-4">
+    <div className="mt-20 max-lg:mt-16 text-center py-24 max-lg:py-16 bg-mainColor-800 px-4">
       <div className="max-w-7xl  mx-auto">
         <Reveal>
           <span className="text-mainColor-100 bg-mainColor-800 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
@@ -164,7 +164,7 @@ function Pricing() {
             <span className="text-mainColor-100 text-xs font-bold tracking-[1.2px] mb-7 inline-block font-sans">
               ENTERPRISE
             </span>
-            <p className="text-sm text-mainColor-100/80 mb-12 leading-6">
+            <p className="text-sm text-mainColor-100/80 mb-12 max-lg:mb-6 leading-6">
               Best for large organizations with complex needs.
             </p>
             <div className="flex items-end h-fit">

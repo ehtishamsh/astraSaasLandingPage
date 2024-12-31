@@ -3,11 +3,11 @@ import Reveal from "../animation/Reveal";
 
 function RequestDemo() {
   return (
-    <div className="mt-20 max-w-7xl mx-auto flex justify-center items-center text-center  min-h-[470px] relative mb-7 px-4">
+    <div className="mt-20 max-lg:mt-16 max-w-7xl mx-auto flex justify-center items-center text-center  min-h-[470px] max-lg:w-full relative mb-7 px-4">
       <div className="absolute top-0 left-0 right-0 z-20 flex justify-center">
         <img src="/demo.png" alt="Request Demo" />
       </div>
-      <div className="flex justify-center  max-w-4xl mx-auto flex-col items-center relative z-30">
+      <div className="flex  justify-center  max-w-4xl mx-auto  max-lg:mb-8 flex-col items-center relative z-30">
         <Reveal>
           <h2 className="text-[42px] mb-6 text-mainColor-100 tracking-tight leading-normal font-medium">
             Take the next step toward optimized & streamlined operations.

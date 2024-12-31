@@ -10,7 +10,7 @@ function FAQ() {
     <div className="relative">
       <div className="  absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]  bg-mainColor-600 w-96 h-96 rounded-full z-10 blur-[14rem]"></div>
 
-      <div className="mt-20 max-w-4xl mx-auto text-center pb-14 px-4 relative z-20">
+      <div className="mt-20 max-w-4xl mx-auto text-center max-lg:mt-16 pb-14 px-4 relative z-20">
         <Reveal>
           <span className="text-mainColor-100 bg-mainColor-800 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
             FAQS
@@ -28,7 +28,7 @@ function FAQ() {
             </p>
           </Reveal>
         </div>
-        <div className="mt-2 grid grid-cols-1 h-[max-content] gap-4 pt-24">
+        <div className="mt-2 grid grid-cols-1 h-[max-content] gap-4 pt-24 max-lg:pt-16">
           {faqQuestions.map((faq, index) => (
             <Reveal delay={0.45 + faq.id * 0.1} key={index}>
               <motion.div

@@ -1,30 +1,30 @@
 function AI() {
   return (
     <section className="py-8 px-4">
-      <div className="max-w-7xl mx-auto  border border-borderMainColor bg-mainColor-800 rounded-xl p-8 grid gap-16 grid-cols-7">
+      <div className="max-w-7xl mx-auto  border border-borderMainColor bg-mainColor-800 rounded-xl p-8 max-lg:p-4 grid gap-16 max-lg:gap-10 grid-cols-7">
         <div className="col-span-3">
           <img
             src="/astro_ai.png"
-            className="rounded-xl"
+            className="rounded-xl max-lg:w-full max-lg:h-full max-lg:object-cover"
             alt="AI"
             loading="lazy"
           />
         </div>
-        <div className="col-span-4 py-8">
+        <div className="col-span-4 py-8 max-lg:py-4">
           <span className="text-mainColor-100 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
             AI
           </span>
-          <div className="mt-6">
-            <h2 className="text-4xl mb-6 text-mainColor-100 font-medium">
+          <div className="mt-6 max-lg:mt-2">
+            <h2 className="text-4xl max-lg:text-3xl mb-6 text-mainColor-100 font-medium">
               AI-Driven Analytics
             </h2>
-            <p className="text-mainColor-200/50 text-lg tracking-tight">
+            <p className="text-mainColor-200/50 text-lg tracking-tight max-lg:text-base">
               Gain deep insights into vendor performance with our advanced AI
               algorithms. Understand trends, predict outcomes, and optimize your
               vendor relationships with precision.
             </p>
           </div>
-          <div className="mt-12 flex flex-col">
+          <div className="mt-12 flex flex-col max-lg:mt-6">
             <div className="flex items-start justify-start gap-4 py-4">
               <span className="mt-1">
                 <svg
