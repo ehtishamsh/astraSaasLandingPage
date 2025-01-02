@@ -7,15 +7,15 @@ function Howitworks() {
     <div className="relative">
       <div className="  absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]  bg-mainColor-600 w-96 h-96 rounded-full z-10 blur-[14rem]"></div>
 
-      <div className="mt-20 max-w-7xl max-lg:mt-16 mx-auto text-center pb-14 px-4  relative z-20">
+      <div className="mt-20 max-w-7xl max-lg:mt-16 max-md:mt-8 mx-auto text-center pb-14 px-4  relative z-20">
         <Reveal>
           <span className="text-mainColor-100 bg-mainColor-800 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
             HOW IT WORKS
           </span>
         </Reveal>
-        <div className="mt-6 max-w-4xl mx-auto">
+        <div className="mt-6 max-w-4xl mx-auto max-md:px-4 max-md:max-w-xl">
           <Reveal delay={0.35}>
-            <h2 className="text-[42px] mb-6 text-mainColor-100 tracking-tight leading-normal font-medium">
+            <h2 className="text-[42px] mb-6 text-mainColor-100 tracking-tight leading-normal max-md:text-4xl font-medium">
               Comprehensive Tools for Optimal Vendor Management
             </h2>
           </Reveal>
@@ -45,7 +45,7 @@ function Howitworks() {
             </div>
           </Reveal>
         </div>
-        <div className="mt-2 grid grid-cols-3 gap-6 pt-24 max-lg:pt-16">
+        <div className="mt-2 grid grid-cols-3 gap-6 pt-24 max-lg:pt-16 max-md:pt-8 max-md:max-w-2xl max-md:mx-auto max-md:grid-cols-2">
           {howitworksCards.map((card, index) => (
             <Reveal
               delay={0.45 + index * 0.1}
@@ -55,12 +55,12 @@ function Howitworks() {
               <img
                 src={card.imgSrc}
                 alt={card.title}
-                className="max-w-6 mb-8"
+                className="max-w-6 mb-8 max-md:mb-4"
               />
-              <h3 className="text-xl font-medium mb-4 text-mainColor-100">
+              <h3 className="text-xl max-md:text-[18px] font-medium mb-4 text-mainColor-100">
                 {card.title}
               </h3>
-              <p className="text-mainColor-200/50 text-base">
+              <p className="text-mainColor-200/50 text-base max-md:text-sm">
                 {card.description}
               </p>
             </Reveal>

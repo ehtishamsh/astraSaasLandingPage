@@ -1,8 +1,8 @@
 function Graphs() {
   return (
     <section className="py-8 px-4 mt-4 max-lg:mt-2">
-      <div className="max-w-7xl mx-auto bg-mainColor-800/60 border border-borderMainColor rounded-xl p-8 max-lg:p-4 grid  gap-16 max-lg:gap-10 grid-cols-7">
-        <div className="col-span-4 py-8 max-lg:py-4">
+      <div className="max-w-7xl max-md:max-w-xl mx-auto max-md:grid-cols-1  border border-borderMainColor max-md:p-6 bg-mainColor-800 rounded-xl p-8 max-lg:p-4 grid gap-16 max-lg:gap-10 max-md:gap-6 grid-cols-7">
+        <div className="col-span-4 py-8 max-lg:py-4 max-md:col-span-1">
           <span className="text-mainColor-100 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
             GRAPHS
           </span>
@@ -71,10 +71,10 @@ function Graphs() {
             <hr className="border-mainColor-200/10" />
           </div>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-3 max-md:col-span-1">
           <img
             src="/graphs.png"
-            className="rounded-xl max-lg:w-full max-lg:h-full max-lg:object-cover"
+            className="rounded-xl max-md:h-[320px]  max-lg:w-full max-lg:h-full max-lg:object-cover"
             alt="Graphs"
             loading="lazy"
           />

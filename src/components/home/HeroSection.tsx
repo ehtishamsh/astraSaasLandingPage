@@ -6,7 +6,7 @@ import { AnimatedImg } from "./AnimatedImg";
 function HeroSection() {
   return (
     <>
-      <section className="mb-20 max-lg:mb-10">
+      <section className="mb-20 max-lg:mb-10 max-md:mb-6">
         <div className="relative">
           <div
             className="w-full h-full relative pt-12 px-5"
@@ -25,7 +25,7 @@ function HeroSection() {
               </div>
             </div>
             <Reveal>
-              <div className="flex flex-col mb-40 pt-40 max-w-[900px] mx-auto items-center z-30 relative">
+              <div className="flex flex-col mb-40 pt-40 max-w-[900px] mx-auto max-sm:mb-10 max-sm:pt-24 items-center z-30 relative">
                 <Link
                   to={"/"}
                   className=" border-b-0 border-x-0 border-t-2 border-mainColor-400/40 text-sm max-sm:text-xs flex items-center gap-2 px-3 rounded-full py-1.5 backdrop-blur-md w-fit text-center text-textColor bg-white/10"
@@ -83,7 +83,7 @@ function HeroSection() {
           </div>
           <div className="overlay">&nbsp;</div>
         </div>
-        <div className="mt-10 relative mb-16 z-30 px-4 w-full">
+        <div className="mt-10 relative mb-16 z-30 px-4 w-full max-md:mb-8">
           <span className="uppercase text-center inline-block w-full tracking-[1.2px] font-normal text-mainColor-100 text-xs">
             Used by the world's most average companies
           </span>
