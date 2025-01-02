@@ -35,7 +35,7 @@ function HeroSection() {
                   </span>
                   <span>Your Internal Developer Platform</span>
                 </Link>
-                <h1 className="mt-8 text-[54px] max-md:text-4xl max-sm:text-3xl font-bold text-center tracking-wide leading-tight">
+                <h1 className="mt-8 text-[54px] max-sm:mt-5 max-md:text-4xl max-sm:text-3xl font-bold text-center tracking-wide leading-tight">
                   <span
                     style={{
                       backgroundImage:

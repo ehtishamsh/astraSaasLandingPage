@@ -11,8 +11,8 @@ function Footer() {
 
       <div className="mt-28 relative z-20">
         <hr className="border-mainColor-200/10" />
-        <div className="max-w-7xl px-6 py-20 mx-auto">
-          <div className="grid grid-cols-3 gap-4">
+        <div className="max-w-7xl px-6 py-20 max-sm:py-10 mx-auto">
+          <div className="grid grid-cols-3 gap-4 max-sm:grid-cols-1">
             <div className="flex flex-col gap-7">
               <img src="/logo.svg" alt="Astro" className="max-w-28" />
               <span className="text-mainColor-200/70">

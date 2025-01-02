@@ -1,31 +1,31 @@
 function AI() {
   return (
-    <section className="py-8 px-4">
-      <div className="max-w-7xl max-md:max-w-xl mx-auto max-md:grid-cols-1  border border-borderMainColor max-md:p-6 bg-mainColor-800 rounded-xl p-8 max-lg:p-4 grid gap-16 max-lg:gap-10 max-md:gap-6 grid-cols-7">
+    <section className="py-8 px-4 max-sm:py-4">
+      <div className="max-w-7xl max-md:max-w-xl mx-auto max-md:grid-cols-1 max-sm:p-3  border border-borderMainColor max-md:p-6 bg-mainColor-800 rounded-xl p-8 max-lg:p-4 grid gap-16 max-lg:gap-10 max-md:gap-6 grid-cols-7">
         <div className="col-span-3 max-md:col-span-1">
           <img
             src="/astro_ai.png"
-            className="rounded-xl max-md:h-[320px]  max-lg:w-full max-lg:h-full max-lg:object-cover"
+            className="rounded-xl max-md:h-[320px] max-sm:h-[220px]  max-lg:w-full max-lg:h-full max-lg:object-cover"
             alt="AI"
             loading="lazy"
           />
         </div>
-        <div className="col-span-4 py-8 max-lg:py-4  max-md:col-span-1">
-          <span className="text-mainColor-100 rounded-[4px] py-1 px-4 text-sm border border-mainColor-200/10">
+        <div className="col-span-4 py-8 max-lg:py-4 max-sm:py-2  max-md:col-span-1">
+          <span className="text-mainColor-100 rounded-[4px] py-1 px-4 max-sm:px-2 max-sm:text-xs text-sm border border-mainColor-200/10">
             AI
           </span>
           <div className="mt-6 max-lg:mt-2">
-            <h2 className="text-4xl max-lg:text-3xl mb-6 text-mainColor-100 font-medium">
+            <h2 className="text-4xl max-lg:text-3xl max-sm:mb-2 max-sm:text-xl mb-6 text-mainColor-100 font-medium">
               AI-Driven Analytics
             </h2>
-            <p className="text-mainColor-200/50 text-lg tracking-tight max-lg:text-base">
+            <p className="text-mainColor-200/50 text-lg max-sm:text-sm tracking-tight max-lg:text-base">
               Gain deep insights into vendor performance with our advanced AI
               algorithms. Understand trends, predict outcomes, and optimize your
               vendor relationships with precision.
             </p>
           </div>
-          <div className="mt-12 flex flex-col max-lg:mt-6">
-            <div className="flex items-start justify-start gap-4 py-4">
+          <div className="mt-12 flex flex-col max-lg:mt-6 max-sm:mt-2">
+            <div className="flex items-start justify-start gap-4 py-4 max-sm:py-2 max-sm:gap-2">
               <span className="mt-1">
                 <svg
                   width="12.000000"
@@ -45,13 +45,13 @@ function AI() {
                   />
                 </svg>
               </span>
-              <p className="ml-4 text-mainColor-100/80 text-base">
+              <p className="ml-4 max-sm:text-xs max-sm:ml-2 text-mainColor-100/80 text-base">
                 Predictive Insights: Anticipate future vendor performance and
                 potential issues before they arise.
               </p>
             </div>
             <hr className="border-mainColor-200/10" />
-            <div className="flex items-start justify-start gap-4 py-4">
+            <div className="flex items-start justify-start gap-4 py-4 max-sm:py-2 max-sm:gap-2">
               <span className="mt-1">
                 <svg
                   width="12.000000"
@@ -71,7 +71,7 @@ function AI() {
                   />
                 </svg>
               </span>
-              <p className="ml-4 text-mainColor-100/80 text-base">
+              <p className="ml-4 text-mainColor-100/80 text-base max-sm:text-xs max-sm:ml-2">
                 Customizable Analytics: Tailor the AI analytics to focus on the
                 metrics that matter most to your business.
               </p>
